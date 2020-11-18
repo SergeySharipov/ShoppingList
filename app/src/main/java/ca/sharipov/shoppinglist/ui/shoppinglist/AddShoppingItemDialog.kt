@@ -13,6 +13,7 @@ class AddShoppingItemDialog(context: Context, var addDialogListener: AddDialogLi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.dialog_add_shopping_item)
+        setTitle("Add a new shopping item")
 
         tvAdd.setOnClickListener {
             val name = etName.text.toString()
